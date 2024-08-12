@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Talk to an Advisor - College Direct Plus</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="../vendors/overlayscrollbars/OverlayScrollbars.min.js"></script>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    
+    <link href="../vendors/hamburgers/hamburgers.min.css" rel="stylesheet">
+    <link href="../vendors/loaders.css/loaders.min.css" rel="stylesheet">
+    <link href="../assets/css/theme.min.css" rel="stylesheet" />
+    <!-- <link href="../assets/css/user.min.css" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="preloader" id="preloader">
+        <div class="loader">
+          <div class="line-scale">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="text-center py-0 pt-4 pb-4">
+        <div class="bg-holder overlay overlay-1" style="background-image:url(/assets/img/background-15.jpg); background-size: cover;"></div>
+        <!--/.bg-holder-->
+        <div class="container">
+          <div class="row min-vh-100 align-items-center">
+            <div class="col-md-9 col-lg-6 mx-auto" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+              <div class="mb-5" data-zanim-xs='{"delay":0,"duration":1}'><a href="../index.html"><img src="../assets/img/cdp-white.png" alt="logo" width="150px" /></a></div>
+              <div class="card" data-zanim-xs='{"delay":0.1,"duration":1}'>
+                <div class="card-body p-md-5">
+                  <h4 class="text-uppercase fs-0 fs-md-1">Talk to an Advisor</h4>
+                  <form class="text-start mt-4" id="talktoadvisor">
+                    <div class="row align-items-center g-4">
+                      <!-- First Name -->
+                      <div class="col-6">
+                        <label for="firstname" class="form-label">Firstname</label>
+                        <input class="form-control" type="text" name="Firstname" id="firstName" placeholder="" aria-label="First Name"  />
+                        <div class="error-message" id="firstNameError"></div>
+                      </div>
+                      <!-- Last Name -->
+                      <div class="col-6">
+                        <label for="lastname" class="form-label">Lastname</label>
+                        <input class="form-control" type="text" name="Lastname" id="lastName" placeholder="" aria-label="Last Name"  />
+                        <div class="error-message" id="lastNameError"></div>
+                      </div>
+                      <!-- Email -->
+                      <div class="col-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input class="form-control" type="email" name="Email" id="email" placeholder="" aria-label="Email"  />
+                        <div class="error-message" id="emailError"></div>
+                      </div>
+                      <!-- Postal Code -->
+                      <div class="col-6">
+                        <label for="postalCode" class="form-label">Postal Code</label>
+                        <input class="form-control" type="number" name="PostalCode" id="postalCode" placeholder="" aria-label="Postal Code"  />
+                        <div class="error-message" id="postalCodeError"></div>
+                      </div>
+                      <!-- Country -->
+                      <div class="col-12">
+                        <label for="country" class="form-label">Country</label>
+                        <select class="form-select" id="country" name="Country" aria-label="Country"  >
+                          <option value="" disabled selected>Select Country</option>
+                        </select>
+                        <div class="error-message" id="countryError"></div>
+                      </div>
+                      <!-- State/Region -->
+                      <div class="col-12">
+                        <label for="statRegion" class="form-label">State/Region</label>
+                        <input class="form-control" type="text" name="StateRegion" id="stateRegion" placeholder="" aria-label="State/Region"  />
+                        <div class="error-message" id="stateRegionError"></div>
+                      </div>
+                      <!-- Phone Number for Calls -->
+                      <div class="col-6">
+                        <label for="phoneCalls" class="form-label">Phone number for Calls</label>
+                        <input class="form-control" type="number" name="PhoneNumberCalls" id="phoneNumberCalls" placeholder="" aria-label="Phone Number for Calls"  />
+                        <div class="error-message" id="phoneNumberCallsError"></div>
+                      </div>
+                      <!-- Phone Number for SMS -->
+                      <div class="col-6">
+                        <label for="phoneSMS" class="form-label">Phone number for SMS</label>
+                        <input class="form-control" type="number" name="PhoneNumberSMS" id="phoneNumberSMS" placeholder="" aria-label="Phone Number for SMS" />
+                        <div class="error-message" id="phoneNumberSMSError"></div>
+                      </div>
+                      <!-- Role -->
+                      <div class="col-12">
+                        <label for="role" class="form-label">Role</label>
+                        <select class="form-select" id="role" name="Role" aria-label="Role"  >
+                          <option value="" selected disabled>Select an option</option>
+                          <option value="Student">Student</option>
+                          <option value="Parent">Parent</option>
+                          <option value="School Counselor/Teacher">School Counselor/Teacher</option>
+                          <option value="Independent Counselor">Independent Counselor</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="error-message" id="roleError"></div>
+                      </div>
+                      <!-- Graduation Year -->
+                      <div class="col-12">
+                        <label for="graduationYear" class="form-label">Graduation Year</label>
+                        <select class="form-select" id="graduationYear" name="GraduationYear" aria-label="Graduation_year"  >
+                          <option value="" selected disabled>Select an option</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                          <option value="2025">2025</option>
+                          <option value="2026">2026</option>
+                          <option value="2027">2027</option>
+                          <option value="2028">2028</option>
+                          <option value="2029">2029</option>
+                          <option value="2030">2030</option>
+                        </select>
+                        <div class="error-message" id="graduationYearError"></div>
+                      </div>
+                      <!-- Services of Interest -->
+                      <div class="col-12">
+                        <p class="mb-2">Services of Interest:</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="collegeAdmission" name="Services" value="College Admission">
+                          <label class="form-check-label" for="collegeAdmission">College Admission</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="careerPlacement" name="Services" value="Career Placement">
+                          <label class="form-check-label" for="careerPlacement">Career Placement</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="testPrep" name="Services" value="Test Prep">
+                          <label class="form-check-label" for="testPrep">Test Prep and Tutoring</label>
+                        </div>
+                        <div class="error-message" id="servicesError"></div>
+                      </div>
+                      <!-- How did you hear about us? -->
+                      <div class="col-12">
+                        <label for="howDidHearAboutUs" class="form-label">How did you hear about us?</label>
+                        <select class="form-select" id="howDidHearAboutUs" name="HowDidHearAboutUs" aria-label="how_did_hear_about_us">
+                          <option value="" selected disabled>Select an option</option>
+                          <option value="Word of mouth">Word of mouth</option>
+                          <option value="Social Media">Social Media</option>
+                          <option value="Ads">Ads</option>
+                          <option value="Search Engine">Search Engine</option>
+                          <option value="Event">Event</option>
+                          <option value="Key Club">Key Club</option>
+                          <option value="Website">Website</option>
+                          <option value="Instagram">Instagram</option>
+                          <option value="Facebook">Facebook</option>
+                          <option value="X (Formerly Twitter)">X (Formerly Twitter)</option>
+                          <option value="LinkedIn">LinkedIn</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="error-message" id="howDidHearAboutUsError"></div>
+                      </div>
+                      <!-- Additional Information -->
+                      <div class="col-12">
+                        <label for="additionalInfo" class="form-label">Additional Information:</label>
+                        <textarea class="form-control" id="additionalInfo" name="AdditionalInfo" rows="4" placeholder="Please provide any additional information or comments here"  ></textarea>
+                        <div class="error-message" id="additionalInfoError"></div>
+                      </div>
+                      <!-- Agreement Checkbox -->
+                      <div class="col-12 mt-3">
+                        <div class="form-check">
+                          <input class="form-check-input" id="rememberMe" name="Agreement" type="checkbox" value=""  />
+                          <label class="form-check-label text-500 lh-sm fw-semi-bold" for="rememberMe">
+                            Yes, I agree to receive SMS updates from College Direct Plus about free resources, events, new products, or updates from my program advisor about my free consultation and future meetings. Message and Data rates apply. You have the option to unsubscribe at any time.
+                          </label>
+                        </div>
+                        <p class="error-message" id="agreementError"></p>
+                      </div>
+                      <!-- Submit Button -->
+                      <div class="col-12 mt-2 mt-sm-3">
+                        <button class="btn btn-primary w-100" type="submit">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="success-response text-center" id="success-response">
+                    <h4 class="text-success">Thank you.<br> Your submission has been recieved.</h4>
+                    <a href="../index.html" class="underline">Back to Home</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../assets/js/talktoadvisor.js"></script>
+    <script src="../vendors/popper/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../vendors/is/is.min.js"></script>
+    <script src="../vendors/fontawesome/all.min.js"></script>
+    <script src="../vendors/lodash/lodash.min.js"></script>
+    <script src="../vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../vendors/gsap/gsap.js"></script>
+    <script src="../vendors/gsap/customEase.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  </body>
+
+</html>
